@@ -15,6 +15,7 @@ use DI\Container;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
 use Dotenv\Dotenv;
+use function DI\create;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -33,7 +34,7 @@ $dotenv->load();
 // Instantiate PHP-DI Container
 $container = new Container();
 // Set container to create Config with .env variables
-$container->set(Config::class, fn() => new Config($_ENV));
+$container->set(Config::class, create(Config::class)->constructor($_ENV));
 // Set container to Entity Manager, with injected Config, and Entity path
 $container->set(EntityManager::class, fn(Config $config) => EntityManager::create(
     $config->db,

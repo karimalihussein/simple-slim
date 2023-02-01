@@ -27373,3 +27373,24 @@ Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/app/Scr
 Stack trace:
 #0 {main}
   thrown in /var/www/app/Scripts/Email.php on line 11
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/app/Scripts/Email.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/app/Scripts/Email.php on line 11
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/app/Scripts/Email.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/app/Scripts/Email.php on line 11
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/app/Scripts/Email.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/app/Scripts/Email.php on line 11
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/app/Scripts/Email.php:11
+Stack trace:
+#0 {main}
+  thrown in /var/www/app/Scripts/Email.php on line 11
+Could not open input file: /var/www/app/Scripts/Email.php
